@@ -1,3 +1,4 @@
+'use client';
 import { Typography } from "@material-tailwind/react";
  
 export function FooterWithLogo() {
@@ -11,8 +12,7 @@ export function FooterWithLogo() {
               as="a"
               href="#"
               color="blue-gray"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-            >
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500" placeholder={undefined}            >
               About Us
             </Typography>
           </li>
@@ -21,8 +21,7 @@ export function FooterWithLogo() {
               as="a"
               href="#"
               color="blue-gray"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-            >
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500" placeholder={undefined}            >
               License
             </Typography>
           </li>
@@ -31,8 +30,7 @@ export function FooterWithLogo() {
               as="a"
               href="#"
               color="blue-gray"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-            >
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500" placeholder={undefined}            >
               Contribute
             </Typography>
           </li>
@@ -41,15 +39,14 @@ export function FooterWithLogo() {
               as="a"
               href="#"
               color="blue-gray"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-            >
+              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500" placeholder={undefined}            >
               Contact Us
             </Typography>
           </li>
         </ul>
       </div>
       <hr className="my-8 border-blue-gray-50" />
-      <Typography color="blue-gray" className="text-center font-normal">
+      <Typography color="blue-gray" className="text-center font-normal" placeholder={undefined}>
         &copy; 2023 Material Tailwind
       </Typography>
     </footer>

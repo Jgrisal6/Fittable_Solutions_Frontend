@@ -1,14 +1,14 @@
+'use client';
 import React from "react";
 import {
   Navbar,
-  MobileNav,
+  Collapse,
   Typography,
   Button,
   IconButton,
-  Card,
 } from "@material-tailwind/react";
  
-export function StickyNavbar() {
+export default function StickyNavbar() {
   const [openNav, setOpenNav] = React.useState(false);
  
   React.useEffect(() => {
@@ -24,8 +24,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
-      >
+        className="p-1 font-normal" placeholder={undefined}      >
         <a href="#" className="flex items-center">
           Pages
         </a>
@@ -34,8 +33,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
-      >
+        className="p-1 font-normal" placeholder={undefined}      >
         <a href="#" className="flex items-center">
           Account
         </a>
@@ -44,8 +42,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
-      >
+        className="p-1 font-normal" placeholder={undefined}      >
         <a href="#" className="flex items-center">
           Blocks
         </a>
@@ -54,8 +51,7 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal"
-      >
+        className="p-1 font-normal" placeholder={undefined}      >
         <a href="#" className="flex items-center">
           Docs
         </a>
@@ -65,13 +61,12 @@ export function StickyNavbar() {
  
   return (
     <div className="-m-6 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4" placeholder={undefined}>
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
             href="#"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
-          >
+            className="mr-4 cursor-pointer py-1.5 font-medium" placeholder={undefined}          >
             Material Tailwind
           </Typography>
           <div className="flex items-center gap-4">
@@ -80,15 +75,13 @@ export function StickyNavbar() {
               <Button
                 variant="text"
                 size="sm"
-                className="hidden lg:inline-block"
-              >
+                className="hidden lg:inline-block" placeholder={undefined}              >
                 <span>Log In</span>
               </Button>
               <Button
                 variant="gradient"
                 size="sm"
-                className="hidden lg:inline-block"
-              >
+                className="hidden lg:inline-block" placeholder={undefined}              >
                 <span>Sign in</span>
               </Button>
             </div>
@@ -96,8 +89,7 @@ export function StickyNavbar() {
               variant="text"
               className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
-              onClick={() => setOpenNav(!openNav)}
-            >
+              onClick={() => setOpenNav(!openNav)} placeholder={undefined}            >
               {openNav ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -131,23 +123,18 @@ export function StickyNavbar() {
             </IconButton>
           </div>
         </div>
-        <MobileNav open={openNav}>
+        <Collapse open={openNav}>
           {navList}
           <div className="flex items-center gap-x-1">
-            <Button fullWidth variant="text" size="sm" className="">
+            <Button fullWidth variant="text" size="sm" className="" placeholder={undefined}>
               <span>Log In</span>
             </Button>
-            <Button fullWidth variant="gradient" size="sm" className="">
+            <Button fullWidth variant="gradient" size="sm" className="" placeholder={undefined}>
               <span>Sign in</span>
             </Button>
           </div>
-        </MobileNav>
+        </Collapse>
       </Navbar>
-      <div className="mx-auto max-w-screen-md py-12">
-        <Typography variant="h2" color="blue-gray" className="mb-2">
-          What is Material Tailwind
-        </Typography>
-      </div>
     </div>
   );
 }
