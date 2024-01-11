@@ -19,14 +19,14 @@ export default function StickyNavbar() {
   }, []);
 
   const navList = (
-    <ul className="mt-4 mb-6 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mt-4 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
         className="p-1 font-normal" placeholder={undefined}      >
         <a href="#" className="flex items-center">
-          Pages
+          Projects
         </a>
       </Typography>
       <Typography
@@ -35,32 +35,14 @@ export default function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal" placeholder={undefined}      >
         <a href="#" className="flex items-center">
-          Account
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal" placeholder={undefined}      >
-        <a href="#" className="flex items-center">
-          Blocks
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal" placeholder={undefined}      >
-        <a href="#" className="flex items-center">
-          Docs
+          About us
         </a>
       </Typography>
     </ul>
   );
 
   return (
-    <div className="-m-4 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
+    <div className="-m-2 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-1 lg:px-8 lg:py-4" placeholder={undefined}>
         <div className="flex items-center justify-between text-blue-gray-900">
           <Typography

@@ -22,24 +22,6 @@ export function FooterWithLogo() {
               href="#"
               color="blue-gray"
               className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500" placeholder={undefined}            >
-              License
-            </Typography>
-          </li>
-          <li>
-            <Typography
-              as="a"
-              href="#"
-              color="blue-gray"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500" placeholder={undefined}            >
-              Contribute
-            </Typography>
-          </li>
-          <li>
-            <Typography
-              as="a"
-              href="#"
-              color="blue-gray"
-              className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500" placeholder={undefined}            >
               Contact Us
             </Typography>
           </li>
@@ -47,7 +29,7 @@ export function FooterWithLogo() {
       </div>
       <hr className="my-8 border-blue-gray-50" />
       <Typography color="blue-gray" className="text-center font-normal" placeholder={undefined}>
-        &copy; 2023 Material Tailwind
+        &copy; 2024 Fittable Solutions
       </Typography>
     </footer>
   );
